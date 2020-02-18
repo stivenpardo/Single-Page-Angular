@@ -1,63 +1,75 @@
 <div class="wrapper">
     <!-- Sidebar -->
     <nav id="sidebar">
-        <div class="sidebar-header">
-            <h3>Bootstrap Sidebar</h3>
+
+        <div id="dismiss">
+            <i class="fas fa-arrow-left"></i>
         </div>
 
-        <ul class="list-unstyled components">
-            <p>Dummy Heading</p>
-            <li class="active">
-                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
-                <ul class="collapse list-unstyled" id="homeSubmenu">
-                    <li>
-                        <a href="#">Home 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Home 2</a>
-                    </li>
-                    <li>
-                        <a href="#">Home 3</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">About</a>
-            </li>
-            <li>
-                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
-                <ul class="collapse list-unstyled" id="pageSubmenu">
-                    <li>
-                        <a href="#">Page 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Page 2</a>
-                    </li>
-                    <li>
-                        <a href="#">Page 3</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Portfolio</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
+        <div class="sidebar-header  ">
+            <img src="https://www.stickpng.com/assets/images/58429977a6515b1e0ad75ade.png" alt="..."
+                class="rounded-circle img">
+            <div class="d-flex mt-2 flex-column">
+                <p class="text-center text-Margin-botton"> {{Stablishment}} </p>
+                <p class="text-Margin-botton">Sede: {{headquarters}} </p>
+            </div>
+            <button type="button" class="btn btn-link ">Editar</button>
+        </div>
+            <ul class="list-unstyled components">
+                <div class="d-flex flex-row bd-highlight mb-3 justify-content-center">
+                    <i class="fas fa-envelope icon-style i" style="margin-right: 35px;"></i>
+                    <i class="fas fa-bell i"></i>
+                </div>
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <button type="button" class="btn btn-link btnLougOut" >Cerrar Sesión</button>
+            </ul>
         
     </nav>
 
+    <!-- Page Content -->
     <div id="content">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-    
-                <button type="button" id="sidebarCollapse" class="btn btn-info">
-                    <i class="fas fa-align-left"></i>
-                    <span>Toggle Sidebar</span>
+                <button type="button" id="sidebarCollapse" class="btn btn-light">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-    
             </div>
         </nav>
     </div>
+    <!-- Dark Overlay element -->
+    <div class="overlay"></div>
 </div>

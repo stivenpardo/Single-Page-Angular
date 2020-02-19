@@ -15,6 +15,7 @@ export class SideBarComponent implements OnInit {
 
   ngOnInit(): void {
     $(document).ready(function () {
+      
       // $("#sidebar").mCustomScrollbar({
       //     theme: "minimal"
       // });

@@ -10,54 +10,133 @@
             <img src="https://www.stickpng.com/assets/images/58429977a6515b1e0ad75ade.png" alt="..."
                 class="rounded-circle img">
             <div class="d-flex mt-2 flex-column">
-                <p class="text-center text-Margin-botton ;" style="font-weight: 700"> {{Stablishment}} </p>
+                <p class="text-center text-Margin-botton textStablishment"> {{Stablishment}} </p>
                 <p class="text-Margin-botton">Sede: {{headquarters}} </p>
             </div>
-            <button type="button" class="btn btn-link btnLougOut">Editar</button>
+            <button type="button" class="btn btn-link colorBackGround" style="margin-top: 15px;">Editar</button>
         </div>
-            <ul class="list-unstyled components">
-                <div class="d-flex flex-row bd-highlight mb-3 justify-content-center">
-                    <i class="fas fa-envelope icon-style icon" style="margin-right: 35px;"></i>
+        <ul class="list-unstyled components" style="text-align: center; width: 100%; ">
+            <div class="d-flex flex-row bd-highlight mb-3 justify-content-center">
+                <a href="#" class="notification" style="margin-right: 40px;">
+                    <i class="fas fa-envelope icon-style icon"></i>
+                    <span class="badge">3</span>
+                </a>
+                <a href="#" class="notification">
                     <i class="fas fa-bell icon"></i>
-                </div>
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Home 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">About</a>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#">Page 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-                <button type="button" class="btn btn-link btnLougOut" >Cerrar Sesión</button>
-            </ul>
-        
+                    <span class="badge">3</span>
+                </a>
+            </div>
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="d-flex flex-row">
+                    <div class="col-11 ">
+                        Home
+                    </div>
+                    <div class="col-1 iconArrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#about" data-toggle="collapse" aria-expanded="false" class="d-flex flex-row">
+                    <div class="col-11 ">
+                        About
+                    </div>
+                    <div class="col-1 iconArrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
+                <ul class="collapse list-unstyled" id="about">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="d-flex flex-row">
+                    <div class="col-11">
+                        Pages
+                    </div>
+                    <div class="col-1 iconArrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
+                <ul class="collapse list-unstyled" id="pageSubmenu">
+                    <li>
+                        <a href="#">Page 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Page 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#portafolio" data-toggle="collapse" aria-expanded="false" class="d-flex flex-row">
+                    <div class="col-11">
+                        Portfolio
+                    </div>
+                    <div class="col-1 iconArrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
+                <ul class="collapse list-unstyled" id="portafolio">
+                    <li>
+                        <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 3</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#contact" data-toggle="collapse" aria-expanded="false" class="d-flex flex-row">
+                    <div class="col-11">
+                        Contact
+                    </div>
+                    <div class="col-1 iconArrow">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>
+                </a>
+                <ul class="collapse list-unstyled" id="contact">
+                    <li>
+                        <a href="#">Home 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Home 3</a>
+                    </li>
+                </ul>
+            </li> 
+                <a href="#"  aria-expanded="false">
+                    <button type="button" class="btn btn-link btnLougOut colorBackGround" >Cerrar Sesión</button>
+                </a>
+            
+        </ul>
+
     </nav>
 
     <!-- Page Content -->

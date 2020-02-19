@@ -9,7 +9,7 @@ import * as $ from 'jquery';
 export class SideBarComponent implements OnInit {
   
   Stablishment:String="KFC"; 
-  headquarters:String ="Galerias";
+  headquarters:String ="Galerías";
 
   constructor() { }
 

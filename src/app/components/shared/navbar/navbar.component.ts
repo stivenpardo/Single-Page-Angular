@@ -10,6 +10,13 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
+
+  }
+
+  searchHero( termino:string){
+    console.log(termino);
+
   }
 
 }
